@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Assembler Linker Loader</title>
+		<link rel='shortcut icon' href='static/icon.ico' type='image/x-icon'/ >
+		<link type="text/css" rel="stylesheet" href="static/css/icon.css" />
+		<link type="text/css" rel="stylesheet" href="static/css/materialize.css" media="screen,projection"/>
+		<link type="text/css" rel="stylesheet" href="static/css/main.css" media="screen,projection"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	</head>
+	<body>
+
+		<header>
+			<nav>
+			    <div class="nav-wrapper brown darken-4 ">
+				  <a class="side-btn white-text brand-logo" plink="titleBox">ALL</a></li>
+			      <div class="col offset-s1 s10 offset-s1 " style="text-align: center;">
+				  <a class="side-btn white-text breadcrumb" plink="input-files">INPUT FILES</a></li>
+				  <a class="side-btn white-text breadcrumb" plink="pass1">PASS 1</a></li>
+				  <a class="side-btn white-text breadcrumb" plink="pass2">PASS 2</a></li>
+				  <a class="side-btn white-text breadcrumb" plink="linker">LINKER</a></li>
+				  <a class="side-btn white-text breadcrumb" plink="simulator">SIMULATOR</a></li>
+			      </div>
+			    </div>
+			</nav>
+		</header>
+
+		<main class="brown lighten-5">
+			<div class="container" style="min-height: 87vh">
+				<!-- Landing Page -->
+				<div style="padding-top: 2%">
+					<div class = "row" id="titleBox">
+					  <div class="col s8 offset-s2">
+					    <div class="card-panel brown darken-3 hoverable"  style="margin:0px auto;">		 		
+					      <span class="white-text" style="text-align: center;font-size:40px;">
+							<center>Assembler Linker Loader</center>
+					      </span>
+							<br>
+							<br>
+							<br>
+							<br>
+							<div class=" white-text" style="text-align: center;">
+							<br>
+							Roopansh Bansal : 150101053
+							<br>
+							Shivam Gupta : 150101068
+							<br>
+							Shubham Singhal : 150101072
+							</div>
+					    </div>
+					  </div>
+					</div>
+				</div>
+				<div id="input-files" style="padding-left: 20%;padding-right: 20%;">
+					<form id="input-form" method="post">
+					  <div class="file-field input-field">
+					    <div class="btn brown darken-1">
+					      <span>File</span>
+					      <input type="file" name="file" multiple>
+					    </div>
+					    <div class="file-path-wrapper">
+					      <input class="file-path validate black-text" type="text" placeholder="Upload one or more files">
+					    </div>
+						<div style="padding-left: 45%">
+					    <button class="btn waves-effect brown darken-2 waves-light" type="button" id="submit-button" name="submit">Submit<i class="material-icons right">send</i>
+					  	</button>
+					  	</div>
+					  </div>
+					</form>
+					<div id='file-data'></div>
+				</div>
+				<div id="pass1"></div>
+				<div id="pass2"></div>
+				<div id="linker">
+					<div class="row">
+					  <div class="col s4 offset-s4">
+					    <div class="card-panel brown lighten-4 hoverable black-text" style="margin:0px auto;">						 
+					      <span class="black-text" id="linkText">
+								Linker Output
+					      </span>
+					    </div>
+					  </div>
+					</div>       
+				</div>
+				<div id="simulator">
+					<div class="row">
+					  <div class="col s3" style="text-align: center">			 		
+					      <div class="input-field col s6">
+			      	        <input placeholder="Offset" id="offset" type="text" class="validate">
+			      	      </div>
+					      <span class="black-text">
+					      	<a class="waves-effect brown lighten-3 black-text waves-light btn-large btn-floating" id="loadButton"><i class="material-icons">fast_forward</i></a>
+						</span>
+					  </div>
+					  <div class="col s6 ">
+					    <div class="card-panel brown lighten-4 hoverable black-text"  style="margin:0px auto;">
+					 		
+					      <span class="black-text" id="currentInst">
+							Nothing Loaded yet
+					      </span>
+					    </div>
+					  </div>
+					  <div class="col s3" style="text-align: center">
+					 		
+					      <span class="black-text">
+							<a class="btn-large btn-floating waves-effect waves-light brown lighten-3 black-text" id="runButton"><i class="material-icons">play_arrow</i></a>
+						</span>
+					  </div>
+					</div>
+					<div class="row">
+					  <div class="col s6" style="display:block">
+					    <div class="card-panel brown lighten-4 hoverable black-text col s12" style="margin:20px auto;padding:10px;">
+					      <span class="" id="registers">
+							Registers	
+					      </span>
+					    </div>
+					    <div class="card-panel brown lighten-4 hoverable black-text col s12" style="margin:20px auto;padding:10px;">
+					    	<span class="" id="varlocs">
+					    	Variable Location
+					    	</span>
+					    </div>
+					  </div>
+					  <div class="col s6 ">
+					  <br>
+					    <div class="card-panel brown lighten-4 hoverable black-text" style="margin:0px auto;padding:10px;">
+					 		
+					      <span class="" id="memlocs">
+							Memory Location
+					      </span>
+					    </div>
+					  </div>
+					</div>
+				</div>
+			</div>
+		</main>
+		
+		<footer class="page-footer" >
+          <div class="footer-copyright">
+            <div class="container">
+        	CS-244 : System Programming Lab 
+            <span class="grey-text text-lighten-4 right">Indian Institute of Technology Guwahati</span>
+            </div>
+          </div>
+        </footer>
+		
+	</body>
+		<script type="text/javascript" src="static/js/jquery.js"></script>
+		<script type="text/javascript" src="static/js/materialize.js"></script>
+		<script type="text/javascript" src="static/js/main.js"></script>
+</html>

@@ -1,0 +1,25 @@
+
+body {
+display: flex;
+/*min-height: 100vh;*/
+flex-direction: column;
+-webkit-background-size : cover;
+-moz-background-size : cover;
+-o-background-size : cover;
+background-size: 100% 100%;
+
+}
+
+main {
+	flex: 1 0 auto;
+}
+
+.page-footer {
+    padding-top: 0;
+    background-color: #3e2723;
+}
+
+.card-panel {
+	margin:20px auto;
+	padding:10px;
+}
