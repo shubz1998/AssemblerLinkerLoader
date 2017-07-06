@@ -1,0 +1,10 @@
+var a = 5
+var b = 10
+var diff1 = 0
+diff1 = 2 - 1
+var diff2 = 0
+diff2 = b - 2
+var diff3 = 0
+diff3 = 10 - a
+var diff4 = 0
+diff4 = b - a

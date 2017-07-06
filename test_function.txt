@@ -1,0 +1,7 @@
+var a = 0
+function inca
+	a = a + 1
+endfunction
+inca()
+inca()
+inca()

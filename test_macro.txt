@@ -1,0 +1,8 @@
+macro
+foo
+var a=5
+var b=10
+mend
+var c=1
+foo
+c=a+b

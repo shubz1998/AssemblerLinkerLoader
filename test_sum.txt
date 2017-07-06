@@ -1,0 +1,10 @@
+var a = 5
+var b = 10
+var sum1 = 0
+sum1 = 1 + 2
+var sum2 = 0
+sum2 = a + 2
+var sum3 = 0
+sum3 = 3 + b
+var sum4 = 0
+sum4 = a + b

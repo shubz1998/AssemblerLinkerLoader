@@ -1,0 +1,12 @@
+var a = 3
+var b = 4
+var c = 0
+if a < 4
+	c = c + 2
+endif
+if b > 2
+	a = a + 1
+endif
+if a = b
+	c = c + 3
+endif

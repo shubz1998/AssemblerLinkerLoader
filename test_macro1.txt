@@ -1,0 +1,14 @@
+var c=0
+var d=0
+var e=0
+macro
+foo
+c = d + e
+mend
+macro
+incr c,&add,&bdd=1
+add = add + 5
+bdd = bdd + 10
+mend
+incr c,bdd=d,add=e
+foo

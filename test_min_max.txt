@@ -1,0 +1,6 @@
+var a = 1
+var b = 2
+var mini = 0
+var maxi = 0
+mini = min(a,b,3)
+mini = max(a,b,3)

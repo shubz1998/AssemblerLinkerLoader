@@ -1,0 +1,10 @@
+var a = 15
+var b = 5
+var div1 = 0
+div1 = 4 / 2
+var div2 = 0
+div2 = a / 5
+var div3 = 0
+div3 = 30 / a
+var div4 = 0
+div4 = a / b

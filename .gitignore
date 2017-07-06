@@ -1,0 +1,16 @@
+# pyc files
+__pycache__/
+*.pyc
+
+# passes files
+*.pass1
+*.pass2
+
+# Linked Files
+*.linked
+
+# Loaded Files
+*.loaded
+
+# misc
+.idea/

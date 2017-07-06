@@ -1,0 +1,5 @@
+var c = 0
+JUMP lol
+c = c + 20
+lol:
+var c = 10
